@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Guardian Text Egyptian Web", Georgia, serif;
+  font-size: 30px;
+  position: relative;
+}
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+/* Top of the page extends till the edge of the viewport */
+.filler {
+  height: 282px;
+  position: absolute;
+  background-color: #1e2e61;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+}
+header {
+  background-color: #1e2e61;
+}
+.logo-container {
+  display: flex;
+  justify-content: space-between;
+}
+.logo-text {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.support-the-guardian {
+  color: #ffe500;
+  font-weight: bold;
+  font-size: 35px;
+}
+.support-the-guardian + p {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.support-btns-container {
+  display: flex;
+  gap: 15px;
+}
+.contribute,
+.subscribe {
+  padding: 8px 20px;
+  font-size: 25px;
+  border-radius: 100px;
+  background-color: #ffe500;
+  border: none;
+  color: #1e2e61;
+  font-weight: bold;
+}
+.contribute:hover,
+.subscribe:hover {
+  cursor: pointer;
+  background-color: #ffd213;
+}
+.logo {
+  padding: 20px;
+  cursor: pointer;
+}
+nav {
+  align-items: center;
+  height: 70px;
+  display: flex;
+  border: 1px solid white;
+}
+.page:link,
+.page:visited {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+.page:hover {
+  border-top: none;
+  border-top: 6px solid #8d1111;
+}
+.Opinion:hover {
+  border-top: 6px solid #ff7f0f;
+}
+.Sport:hover {
+  border-top: 6px solid #00b2ff;
+}
+.Culture:hover {
+  border-top: 6px solid #eacca0;
+}
+.Lifestyle:hover {
+  border-top: 6px solid #ffabdb;
+}
+.Lifestyle:link,
+.Lifestyle:visited {
+  border-right: none;
+}
+
+/* CONTENT */
+.main-content {
+  border: 1px solid #adadad;
+  border-top: none;
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding: 40px 20px;
+  row-gap: 20px;
+  column-gap: 25px;
+}
+.row-1 {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* background-color: yellow; */
+}
+.content-date {
+  font-size: 25px;
+  font-weight: bold;
+  color: #8d1111;
+}
+.content-title {
+  font-weight: bold;
+  font-size: 40px;
+}
+.main-post {
+  grid-row: 2 / span 3;
+  border-top: 8px solid #8d1111;
+  display: grid;
+  align-content: space-between;
+}
+.main-post:hover {
+  background-color: #fcfcfc;
+  filter: brightness(70%);
+  cursor: pointer;
+}
+.main-post-image {
+  width: 100%;
+}
+.main-post-title {
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.post {
+  background-color: #8d1111;
+  cursor: pointer;
+}
+.post:hover {
+  filter: brightness(70%);
+}
+.post-image {
+  width: 100%;
+}
+.post-title {
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.hide-btn {
+  border: none;
+  background-color: white;
+  color: #adadad;
+  cursor: pointer;
+  font-size: 20px;
+}
+.hide {
+  display: none;
+}
+strong {
+  color: #8d1111;
+}
+
+.secondary-content {
+  padding: 40px 20px;
+  border: 1px solid #adadad;
+  border-top: none;
+  border-bottom: none;
+}
+.secondary-heading {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.secondary-title {
+  font-size: 40px;
+}
+.secondary-container {
+  display: flex;
+  gap: 30px;
+}
+.sec {
+  background-color: #8d1111;
+  color: white;
+  cursor: pointer;
+}
+.sec:hover {
+  filter: brightness(70%);
+}
+.sec img {
+  width: 100%;
+  height: 161px;
+}
+.sec p {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.pages-footer {
+  background-color: #1e2e61;
+  /* height: 300px; */
+  border: none;
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+  border: 1px solid white;
+}
+.filler-bottom {
+  position: absolute;
+  bottom: 0;
+  background-color: #1e2e61;
+  width: 100%;
+  height: 319px;
+  z-index: -100;
+}
+.link-footer:link,
+.link-footer:visited {
+  display: block;
+  /* height: 50px; */
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border-right: 1px solid white;
+}
+.news {
+  border-top: 6px solid #8d1111;
+}
+.pages-footer .opinion:hover {
+  border-top: 6px solid #ff7f0f;
+}
+.pages-footer .sport:hover {
+  border-top: 6px solid #00b2ff;
+}
+.pages-footer .culture:hover {
+  border-top: 6px solid #eacca0;
+}
+.pages-footer .lifestyle:hover {
+  border-top: 6px solid #ffabdb;
+}
+
+.last-part {
+  height: 250px;
+}
+.lifestyle:link,
+.lifestyle:visited {
+  border-right: none;
+}
