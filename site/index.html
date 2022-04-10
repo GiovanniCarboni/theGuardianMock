@@ -1,3 +1,4 @@
+<!-- Use a code formatter like prettier ( could combine with eslint for css / js ) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,20 +6,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
     <title>The Guardian</title>
   </head>
   <body>
+    <!-- 
+      header
+      header-title
+      header-description
+      header--modified
+
+      button
+      button--primary
+      button--secondary
+     -->
     <div class="filler"></div>
-    <div class="filler-bottom"></div>
+    <div class="filler--bottom"></div>
     <div class="main-container">
       <header>
         <div class="logo-container">
+          <!-- hero-banner -->
           <div class="logo-text">
+            <!-- hero-banner-content -->
             <p class="support-the-guardian">Support the guardian</p>
+            <!-- content-title -->
             <p>Available for everyone, funded by readers</p>
+            <!-- content-description -->
             <div class="support-btns-container">
+              <!-- cta-container -->
               <button class="contribute">Contribute &rarr;</button>
+              <!-- cta -->
               <button class="subscribe">Subscribe &rarr;</button>
+              <!-- cta -->
             </div>
           </div>
           <img src="logo.jpg" alt="the guardian" class="logo" />
@@ -52,6 +71,7 @@
             class="main-post-image"
           />
         </div>
+        <!-- Don't use X as a class name -->
         <div class="x post">
           <img src="post-image.jpg" alt="post image" class="post-image" />
           <p class="post-title">
@@ -117,6 +137,6 @@
         <div class="last-part"></div>
       </footer>
     </div>
-    <script src="script.js"></script>
+    <!-- Script tag was here -->
   </body>
 </html>
